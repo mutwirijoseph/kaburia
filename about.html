@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,intial-scale=1.0"> 
+	<title>University website Design easy Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="ras.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/LOGO.png"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()" ></i>
+				<ul>
+					<li><a href="">HOME</a> </li>
+					<li><a href="">ABOUT</a> </li>
+					<li><a href="">COURSE</a> </li>
+					<li><a href="">BLOG</a> </li>
+					<li><a href="">CONTACT</a> </li>
+				</ul>
+				
+			</div>
+			<i class="fa fa-bars"onclick="showMenu()"></i>
+		</nav>
+		<h1>About us</h1>
+	</section>
+	
+	
+
+	<!---Javascript for Toggle menu---->
+<script type="text/javascript">
+	var navlinks=document.getElementById("navlinks");
+	function showMenu() {
+		navlinks.style.right="0"
+	}
+	function hideMenu() {
+		navlinks.style.right="-200px"
+	}
+</script>
+</body>
+</html>
